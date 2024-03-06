@@ -1,0 +1,26 @@
+@import "fonts";
+
+body {
+	background-color: pink;
+	span {
+		color: red;
+			font-family: Roboto;
+			// font-weight: 500;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	body{
+		background-color: red;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+	body{
+		span {
+			color: #fff;
+		}
+	}
+
+}
