@@ -1,26 +1,138 @@
-@import "fonts";
+@import 'common-styles';
+@import 'mixins';
 
-body {
-	background-color: pink;
-	span {
-		color: red;
-			font-family: Roboto;
-			// font-weight: 500;
-	}
-}
-
-@media screen and (max-width: 768px) {
-	body{
-		background-color: red;
-	}
-
-}
-
-@media screen and (max-width: 768px) {
-	body{
-		span {
-			color: #fff;
+#main-page {
+	#main {
+		.section-slider {
+			padding-top: 106px;
+			height: 100vh;
+			background-color: $green;
+			display: flex;
+			align-items: center;
+			.container {
+				position: relative;
+				.slider-main-block {
+					width: 100%;
+				}
+				.h1 {
+					left: 50%;
+					transform: translateX(-50%);
+					z-index: 10;
+					bottom: 100px;
+					width: 100%;
+					position: absolute;
+				}
+				.button {
+					margin: 30px auto 0;
+				}
+			}
+		}
+		.section-about-us {
+			padding: 30px 0 34px;
+			position: relative;
+			.image {
+				max-width: 532px;
+				left: 9px;
+				top: 0;
+			}
+			.container {
+				display: flex;
+				justify-content: center;
+				.content {
+					max-width: 820px;
+					width: 100%;
+					.h2 {
+						margin-bottom: 30px;
+					}
+					.h4 {
+						margin-bottom: 20px;
+					}
+					.mb {
+						margin-bottom: 25px;
+					}
+					p {
+						text-align: center;
+					}
+					.button {
+						margin: 20px auto 0;
+					}
+				}
+			}
+		}
+		.section-services {
+			padding: 34px 0 30px;
+			.container {
+				& > .h2 {
+					margin-bottom: 40px;
+				}
+				.content {
+					display: flex;
+					align-items: flex-start;
+					justify-content: space-between;
+					gap: 80px;
+					.item {
+						width: calc(50% - 50px);
+						&:first-child {
+							max-width: 420px;
+							width: 100%;
+						}
+						.h2 {
+							margin-bottom: 16px;
+						}
+						.button {
+							margin-top: 20px;
+						}
+						.picture {
+							display: flex;
+							img {
+								mix-blend-mode: multiply;
+								width: 100%;
+							}
+						}
+						.row-item {
+							margin-bottom: 15px;
+							display: flex;
+							align-items: flex-start;
+							gap: 30px;
+							.check {
+								height: 50px;
+								width: 50px;
+								min-width: 50px;
+								border-radius: 50%;
+								display: flex;
+								align-items: center;
+								background-color: $green;
+								justify-content: center;
+								svg {
+									width: 20px;
+								}
+							}
+							.description {
+								.h5 {
+									text-align: left;
+									margin-bottom: 8px;
+								}
+							}
+						}
+						*:last-child {
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+		}
+		.section-available-premises {
+			padding: 30px 0 80px;
+			.container {
+				.h2 {
+					margin-bottom: 85px;
+				}
+				.image {
+					max-width: 380px;
+					right: 90px;
+					top: 42px;
+				}
+			}
 		}
 	}
-
 }

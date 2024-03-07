@@ -40,5 +40,10 @@
     "webp-converter": "^2.2.3",
     "webpack": "^5.72.1",
     "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "@fancyapps/ui": "^5.0.33",
+    "animate.css": "^4.1.1",
+    "wow.js": "^1.2.2"
   }
 }

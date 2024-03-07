@@ -1,6 +1,16 @@
-import * as flsFunctions from './modules/functions.js';
-import Swiper, { Navigation, Pagination } from 'swiper';
+import * as flsFunctions from './modules/functions.js'
+import { Fancybox } from '@fancyapps/ui'
 
-flsFunctions.isWebP();
+window.addEventListener('load', e => {
+	Fancybox.bind('[data-fancybox="gallery-room"]', {
+		//
+	})
+	flsFunctions.isWebP()
 
-const swiper = new Swiper();
+	flsFunctions.scrollAnchor()
+	// flsFunctions.addShadowHeader()
+	flsFunctions.scrollTop()
+	flsFunctions.initializedSlider()
+	// flsFunctions.showMobMenu()
+	flsFunctions.wowAnimationInit()
+})

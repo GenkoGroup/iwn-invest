@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/head.html', { 'title': 'Premises' })
+	<body id="cart-page">
+		@@include('html/preloader.html', {}) @@include('html/header.html', {})
+		<main id="main">
+			<section class="section-information-cart">
+				<div class="container">
+					<div class="image">
+						<img src="img/interior.png" alt="interior" />
+					</div>
+					<a href="catalog-page.html" class="link-back">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="72"
+							height="16"
+							viewBox="0 0 72 16"
+							fill="none"
+						>
+							<path
+								d="M0.292892 7.29289C-0.0976334 7.68342 -0.0976334 8.31658 0.292892 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292892 7.29289ZM72 7L1 7V9L72 9V7Z"
+								fill="black"
+							/>
+						</svg>
+					</a>
+					<h2 class="h2">Mieszkanie na ulice Bułgarskiej</h2>
+					<div class="gallery">
+						<a
+							data-fancybox="gallery-room"
+							href="img/gallery/gallery-pic1.png"
+							class="gallery-picture"
+						>
+							<img src="img/gallery/gallery-pic1.png" alt="gallery picture1" />
+						</a>
+						<a
+							data-fancybox="gallery-room"
+							href="img/gallery/gallery-pic2.png"
+							class="gallery-picture"
+						>
+							<img src="img/gallery/gallery-pic2.png" alt="gallery picture2" />
+						</a>
+						<a
+							data-fancybox="gallery-room"
+							href="img/gallery/gallery-pic3.png"
+							class="gallery-picture"
+						>
+							<img src="img/gallery/gallery-pic3.png" alt="gallery picture3" />
+						</a>
+						<a
+							data-fancybox="gallery-room"
+							href="img/gallery/gallery-pic4.png"
+							class="gallery-picture"
+						>
+							<img src="img/gallery/gallery-pic4.png" alt="gallery picture4" />
+						</a>
+					</div>
+					<div class="description">
+						<h4 class="h4">Description</h4>
+						<p class="normalText">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Suspendisse in malesuada sem. dui, elementum sit amet odio eu,
+							molestie mollis ipsum. Nulla diam dolor, commodo sit amet orci at,
+							pretium molestie nisl. Nam vel lacinia felis, nec dignissim felis.
+							Fusce lacinia leo at ullamcorper interdum. Maecenas laoreet quam
+							et eros pulvinar, nec congue lorem rutrum.
+						</p>
+						<p class="normalText">
+							Maecenas ut posuere magna. Integer imperdiet quam aliquet est
+							sagittis aliquet. Proin fermentum nibh odio, a ultricies mauris
+							venenatis eget. Interdum et malesuada fames
+						</p>
+						<h4 class="h4">Koszt najmu:</h4>
+						<div class="wrapper-item">
+							<div class="item">
+								<p class="littleText">Czynsz:</p>
+								<h4 class="h4">3 000,00 zł</h4>
+							</div>
+							<div class="item">
+								<p class="littleText">Czynsz administracyjny:</p>
+								<h4 class="h4">500,00 zł</h4>
+							</div>
+						</div>
+						<div class="item mb">
+							<p class="littleText">Kaucja</p>
+							<h4 class="h4">3 500,00 zł</h4>
+						</div>
+						<div class="item">
+							<p class="littleText">Prąd</p>
+							<h4 class="h4">100,00 zł</h4>
+						</div>
+					</div>
+				</div>
+			</section>
+			@@include('html/form.html', {})
+		</main>
+		@@include('html/footer.html', {})
+		<script src="js/app.min.js"></script>
+	</body>
+</html>

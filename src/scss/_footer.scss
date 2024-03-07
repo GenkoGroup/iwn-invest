@@ -1,0 +1,11 @@
+#footer {
+	background-color: $green;
+	height: 185px;
+	padding: 25px 0;
+	.container {
+		.logo {
+			display: flex;
+			width: fit-content;
+		}
+	}
+}

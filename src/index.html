@@ -1,19 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
+	@@include('html/head.html', { 'title': 'IWN INVEST' })
+	<body id="main-page">
+		@@include('html/preloader.html', {}) @@include('html/header.html', {})
+		<main id="main">
+			<section class="section-slider">
+				<div class="container">
+					<!-- Slider main container -->
+					<div class="swiper slider-main-block">
+						<!-- Additional required wrapper -->
+						<div class="swiper-wrapper">
+							<!-- Slides -->
+							<div class="swiper-slide">
+								<img src="img/slider/slide-pic.png" alt="slide picture" />
+							</div>
+							<div class="swiper-slide">
+								<img src="img/slider/slide-pic.png" alt="slide picture" />
+							</div>
+							<div class="swiper-slide">
+								<img src="img/slider/slide-pic.png" alt="slide picture" />
+							</div>
+							<div class="swiper-slide">
+								<img src="img/slider/slide-pic.png" alt="slide picture" />
+							</div>
+							<div class="swiper-slide">
+								<img src="img/slider/slide-pic.png" alt="slide picture" />
+							</div>
+						</div>
+						<!-- If we need pagination -->
+						<!-- <div class="swiper-pagination"></div> -->
 
-@@include('html/head.html', {
-	'title': 'Gulp settings'
-})
-<body>
-@@include('html/header.html', {})
-<main>
-	<h1>Hello</h1>
-	<span>My friend!</span>
-		<img src="@img/picture.jpg" style='width: 50%;' alt="image">
-		<img src="@img/picture2.jpg" style='width: 50%;' alt="image">
-		<img src="@img/icon.svg"  alt="svg">
-</main>
-@@include('html/footer.html', {})
-<script  src='js/app.min.js'></script>
-</body>
+						<!-- If we need navigation buttons -->
+						<!-- <div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div> -->
+
+						<!-- If we need scrollbar -->
+						<!-- <div class="swiper-scrollbar"></div> -->
+					</div>
+					<h1 class="h1">Pozwól IWN zarządzać Twoją nieruchomością</h1>
+					<a href="#section-contact-form" class="button variant1">Skontaktuj</a>
+				</div>
+			</section>
+			<section class="section-about-us" id="section-about-us">
+				<div class="image">
+					<img src="img/village.png" alt="village" />
+				</div>
+				<div class="container">
+					<div class="content">
+						<h2 class="h2">O firmie</h2>
+						<h4 class="h4">IWN INVEST</h4>
+						<p class="normalText mb">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Suspendisse in malesuada sem. dui, elementum sit amet odio eu,
+							molestie mollis ipsum. Nulla diam dolor, commodo sit amet orci at,
+							pretium molestie nisl. Nam vel lacinia felis, nec dignissim felis.
+							Fusce lacinia leo at ullamcorper interdum. Maecenas laoreet quam
+							et eros pulvinar, nec congue lorem rutrum.
+						</p>
+						<p class="normalText">
+							Maecenas ut posuere magna. Integer imperdiet quam aliquet est
+							sagittis aliquet. Proin fermentum nibh odio, a ultricies mauris
+							venenatis eget. Interdum et malesuada fames
+						</p>
+						<a href="#section-contact-form" class="button variant2"
+							>Skontaktuj się</a
+						>
+					</div>
+				</div>
+			</section>
+			<section class="section-services" id="section-services">
+				<div class="container">
+					<h2 class="h2">Oferujemy kompleksową usługę</h2>
+					<div class="content">
+						<div class="item">
+							<h2 class="h2">You</h2>
+							<div class="picture">
+								<img src="img/person.png" alt="person" />
+							</div>
+							<p class="normalText">
+								Kiedy podejmujesz decyzję dotyczącą wynajmu na własną rękę,
+								narażasz się na wiele pytań, które pochłoną wiele Twojego czasu.
+								Zaufaj profesjonalistom. My podejmujemy wszystkie decyzje.
+							</p>
+							<a href="#section-contact-form" class="button variant2"
+								>Skontaktuj się</a
+							>
+						</div>
+						<div class="item">
+							<h2 class="h2">IWN</h2>
+							<div class="row-item">
+								<div class="check">
+									<svg
+										width="24"
+										height="16"
+										viewBox="0 0 24 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M2.05933 4.5081L10.7335 13.7067L22.5305 1.19659"
+											stroke="white"
+											stroke-width="3"
+										/>
+									</svg>
+								</div>
+								<div class="description">
+									<h5 class="h5">Marketing сyfrowy</h5>
+									<p class="normalText">
+										Wykorzystujemy dwa podstawowe metody, aby zaprezentować Twój
+										dom milionom potencjalnych gości, zachęcić ich do rezerwacji
+										i zwiększyć przychody.
+									</p>
+								</div>
+							</div>
+							<div class="row-item">
+								<div class="check">
+									<svg
+										width="24"
+										height="16"
+										viewBox="0 0 24 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M2.05933 4.5081L10.7335 13.7067L22.5305 1.19659"
+											stroke="white"
+											stroke-width="3"
+										/>
+									</svg>
+								</div>
+								<div class="description">
+									<h5 class="h5">Umeblowanie i dekoracja</h5>
+									<p class="normalText">
+										Nasz zespół projektantów wnętrz ręcznie wybiera i zakupuje
+										wszystkie meble, wyposażenie oraz akcesoria niezbędne, aby
+										Twój obiekt idealnie wpasował się w oczekiwania naszych
+										starannie wyselekcjonowanych mieszkańców.
+									</p>
+								</div>
+							</div>
+							<div class="row-item">
+								<div class="check">
+									<svg
+										width="24"
+										height="16"
+										viewBox="0 0 24 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M2.05933 4.5081L10.7335 13.7067L22.5305 1.19659"
+											stroke="white"
+											stroke-width="3"
+										/>
+									</svg>
+								</div>
+								<div class="description">
+									<h5 class="h5">Obsługa domowa</h5>
+									<p class="normalText">
+										Nasz personel sprzątający to doświadczony zespół
+										profesjonalistów, którzy zobowiązują się zapewnić
+										nieskazitelną czystość dla każdego gościa. Są oni
+										przeszkoleni w obsłudze gości oraz prezentacji pokoi.
+									</p>
+								</div>
+							</div>
+							<div class="row-item">
+								<div class="check">
+									<svg
+										width="24"
+										height="16"
+										viewBox="0 0 24 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M2.05933 4.5081L10.7335 13.7067L22.5305 1.19659"
+											stroke="white"
+											stroke-width="3"
+										/>
+									</svg>
+								</div>
+								<div class="description">
+									<h5 class="h5">Licencje i zezwolenia</h5>
+									<p class="normalText">
+										Uzyskujemy licencje na krótkoterminowy wynajem, zezwolenia
+										oraz pozwolenia podatkowe w imieniu właściciela, aby być
+										zgodnym z przepisami każdego miasta.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section
+				class="section-available-premises"
+				id="section-available-premises"
+			>
+				<div class="container">
+					<h2 class="h2">Dostępne lokale</h2>
+					<div class="image">
+						<img src="img/interior.png" alt="interior" />
+					</div>
+					<div class="content">
+						<div class="column">
+							<a href="cart-page.html" class="cart">
+								<div class="picture">
+									<img src="img/pic-1.png" alt="pic 1" />
+								</div>
+								<h3 class="h3">Mieszkanie na ulice Bułgarskiej</h3>
+								<p class="normalText">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									Suspendisse in malesuada sem.dui, elementum sit amet odio eu,
+									molestie mollis ipsum. Nulla diam dolor, commodo sit amet orci
+									at, pretium molestie nisl. Nam vel lacinia felis,
+								</p>
+							</a>
+							<a href="cart-page.html" class="cart">
+								<div class="picture">
+									<img src="img/pic-3.png" alt="pic 3" />
+								</div>
+								<h3 class="h3">Mieszkanie na ulice Bułgarskiej</h3>
+								<p class="normalText">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									Suspendisse in malesuada sem.dui, elementum sit amet odio eu,
+									molestie mollis ipsum. Nulla diam dolor, commodo sit amet orci
+									at, pretium molestie nisl. Nam vel lacinia felis,
+								</p>
+							</a>
+						</div>
+						<div class="column">
+							<a href="cart-page.html" class="cart">
+								<div class="picture">
+									<img src="img/pic-2.png" alt="pic 2" />
+								</div>
+								<h3 class="h3">Mieszkanie na ulice Bułgarskiej</h3>
+								<p class="normalText">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									Suspendisse in malesuada sem.dui, elementum sit amet odio
+								</p>
+							</a>
+							<a href="cart-page.html" class="cart">
+								<div class="picture">
+									<img src="img/pic-4.png" alt="pic 4" />
+								</div>
+								<h3 class="h3">Mieszkanie na ulice Bułgarskiej</h3>
+								<p class="normalText">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									Suspendisse in malesuada sem.dui, elementum sit amet odio eu,
+									molestie mollis ipsum.
+								</p>
+							</a>
+						</div>
+					</div>
+					<a href="catalog-page.html" class="button variant2"
+						>Zobaczyć wszystkie</a
+					>
+				</div>
+			</section>
+			@@include('html/form.html', {})
+		</main>
+		@@include('html/footer.html', {})
+		<script src="js/app.min.js"></script>
+	</body>
 </html>

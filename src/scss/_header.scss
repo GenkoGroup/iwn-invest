@@ -1,0 +1,21 @@
+#header {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 20px;
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		.logo {
+			display: flex;
+		}
+		.navigation {
+			.menu {
+				display: flex;
+				align-items: center;
+				gap: 0 50px;
+			}
+		}
+	}
+}
