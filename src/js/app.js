@@ -11,6 +11,7 @@ window.addEventListener('load', e => {
 	// flsFunctions.addShadowHeader()
 	flsFunctions.scrollTop()
 	flsFunctions.initializedSlider()
+	flsFunctions.dynamicAnchorHeader()
 	// flsFunctions.showMobMenu()
 	flsFunctions.wowAnimationInit()
 })

@@ -94,7 +94,7 @@ input {
 	font-size: 18px;
 	line-height: 27px;
 	letter-spacing: 1%;
-	font-family: $timesNewRomanBold;
+	font-family: $interMedium;
 	color: $black;
 	&::placeholder {
 		/* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -161,6 +161,10 @@ a {
 
 .link {
 	@include link;
+}
+
+.largeText {
+	@include largeText;
 }
 
 .normalText {

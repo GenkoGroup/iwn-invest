@@ -34,26 +34,33 @@ document.body.onload = () => {
 // Плавный скрол якоря к блокам
 export function scrollAnchor() {
 	const anchors = document.querySelectorAll('a[href*="#"]')
-
+	let currentPage = window.location.pathname
 	let headerOffset = 0
 
 	for (let anchor of anchors) {
 		anchor.addEventListener('click', function (e) {
-			e.preventDefault()
-			if (window.innerWidth < 768) {
-				headerOffset = 0
+			if (
+				currentPage !== '/ivn-invest-test/' &&
+				anchor.classList.contains('link-anchor')
+			) {
+				return false
 			} else {
-				headerOffset = 0
+				e.preventDefault()
+				if (window.innerWidth < 768) {
+					headerOffset = 0
+				} else {
+					headerOffset = 0
+				}
+				const blockID = anchor.getAttribute('href').substr(1)
+				let elementPosition = document
+					.getElementById(blockID)
+					?.getBoundingClientRect().top
+				let offsetPosition = elementPosition + window.pageYOffset - headerOffset
+				window.scrollTo({
+					top: offsetPosition,
+					behavior: 'smooth',
+				})
 			}
-			const blockID = anchor.getAttribute('href').substr(1)
-			let elementPosition = document
-				.getElementById(blockID)
-				?.getBoundingClientRect().top
-			let offsetPosition = elementPosition + window.pageYOffset - headerOffset
-			window.scrollTo({
-				top: offsetPosition,
-				behavior: 'smooth',
-			})
 		})
 	}
 }
@@ -102,12 +109,12 @@ export function initializedSlider() {
 		effect: 'coverflow',
 		grabCursor: true,
 		centeredSlides: true,
-		slidesPerView: 3,
+		slidesPerView: 2.2,
 		coverflowEffect: {
 			rotate: 0,
 			stretch: 80,
-			depth: 200,
-			modifier: 1.5,
+			depth: 1500,
+			modifier: 0.4,
 			slideShadows: false,
 		},
 	})
@@ -121,6 +128,25 @@ export function showMobMenu() {
 	burgerButton?.addEventListener('click', e => {
 		e.currentTarget.classList.toggle('active')
 		mobMenu?.classList.toggle('active')
+	})
+}
+
+//dynamic anchorHeader
+
+export function dynamicAnchorHeader() {
+	let currentPage = window.location.pathname
+	const anchors = [
+		'#section-about-us',
+		'#section-services',
+		'#section-available-premises',
+	]
+	const links = document.querySelectorAll('.navigation .menu li .link-anchor')
+	links?.forEach((link, ind) => {
+		if (currentPage !== '/ivn-invest-test/') {
+			let anchorLink =
+				'https://genkogroup.github.io/ivn-invest-test/' + anchors[ind]
+			link.setAttribute('href', anchorLink)
+		}
 	})
 }
 
