@@ -102,10 +102,10 @@ export function initializedSlider() {
 	const portfolioSlider = new Swiper('.slider-main-block', {
 		// Optional parameters
 		loop: true,
-		// speed: 1000,
-		// autoplay: {
-		// 	delay: 3000,
-		// },
+		speed: 1000,
+		autoplay: {
+			delay: 3000,
+		},
 		effect: 'coverflow',
 		grabCursor: true,
 		centeredSlides: true,
