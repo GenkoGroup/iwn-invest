@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/head.html', { 'title': 'Premises' })
+	<body id="cart-page">
+		@@include('html/preloader.html', {}) @@include('html/header.html', {})
+		<main id="main">
+			<section class="section-information-cart">
+				<div class="container">
+					<div class="image wow animate__zoomIn"
+									data-lang="block-description-company-title"
+									data-wow-duration="1s"
+									data-wow-delay="0s">
+						<img src="img/interior.png" alt="interior" />
+					</div>
+					<a href="catalog-page.html" class="link-back">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="72"
+							height="16"
+							viewBox="0 0 72 16"
+							fill="none"
+						>
+							<path
+								d="M0.292892 7.29289C-0.0976334 7.68342 -0.0976334 8.31658 0.292892 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292892 7.29289ZM72 7L1 7V9L72 9V7Z"
+								fill="black"
+							/>
+						</svg>
+					</a>
+					<h2 class="h2 wow animate__fadeInLeft"
+						data-lang="block-description-company-title"
+						data-wow-duration="1s"
+						data-wow-delay="0s">Mieszkanie na Bułgarskiej</h2>
+					<div class="gallery wow animate__zoomIn"
+									data-lang="block-description-company-title"
+									data-wow-duration="1s"
+									data-wow-delay="0s">
+						<a
+							data-fancybox="gallery-room"
+							href="img/pic-5.jpg"
+							class="gallery-picture"
+						>
+							<img src="img/pic-5.jpg" alt="gallery picture5" />
+						</a>
+						<a
+							data-fancybox="gallery-room"
+							href="img/pic-6.jpg"
+							class="gallery-picture"
+						>
+							<img src="img/pic-6.jpg" alt="gallery picture6" />
+						</a>
+							<a
+							data-fancybox="gallery-room"
+							href="img/pic-7.jpg"
+							class="gallery-picture"
+						>
+							<img src="img/pic-7.jpg" alt="gallery picture7" />
+						</a>
+							<a
+							data-fancybox="gallery-room"
+							href="img/pic-8.jpg"
+							class="gallery-picture"
+						>
+							<img src="img/pic-8.jpg" alt="gallery picture8" />
+						</a>
+							</a>
+							<a
+							data-fancybox="gallery-room"
+							href="img/pic-9.jpg"
+							class="gallery-picture"
+						>
+							<img src="img/pic-9.jpg" alt="gallery picture9" />
+						</a>
+					</div>
+					<div class="description">
+						<h4 class="h4 wow animate__fadeInLeft"
+						data-lang="block-description-company-title"
+						data-wow-duration="1s"
+						data-wow-delay="0s">Description</h4>
+						<p class="normalText wow animate__fadeInRight"
+						data-lang="block-description-company-title"
+						data-wow-duration="1s"
+						data-wow-delay="0s">
+						Do wynajęcia jest mieszkanie o powierzchni około 31 m2, nowe i bardzo przytulne. Nieruchomość znajduje się na drugim piętrze apartamentowca przy ulicy Żelaznej, którego budowa zakończyła się w 2022 roku. Mieszkanie składa się z: salonu z aneksem kuchennym, łazienki z prysznicem i WC. Mieszkanie jest umeblowane i wyposażone w wysokiej jakości sprzęty AGD, takie jak lodówka, płyta indukcyjna, piekarnik, pralko-suszarka, telewizor 50 cali i soundbar. Niewątpliwym atutem tej inwestycji jest bliskość przystanku autobusowego obsługującego linie numer 152 i 157. W kilka minut można dotrzeć nad Jezioro Maltańskie, do Nowego ZOO, Term Maltańskich. W pobliżu znajduje się także sztuczny stok narciarski, Galeria Malta oraz Posnania. Koszty: czynsz najmu: 2300 zł, koszty administracyjne: około 300 zł (zaliczki na wodę, ogrzewanie, wywóz nieczystości, śmieci), energia elektryczna: 100 zł (zaliczka w zależności od zużycia / miesiąc), pakiet TV i internet: 50 zł, miejsce w garażu podziemnym na dwa samochody - platforma: 300 zł. Łączny miesięczny koszt: 3 050 zł. Istnieje możliwość wystawienia faktury VAT. Wymagana kaucja w wysokości 3000 zł. Dostępne od początku marca 2024 roku.
+						</p>
+						<h4 class="h4 wow animate__fadeInLeft"
+						data-lang="block-description-company-title"
+						data-wow-duration="1s"
+						data-wow-delay="0s">Koszt najmu:</h4>
+						<div class="wrapper-item wow animate__fadeInRight"
+						data-lang="block-description-company-title"
+						data-wow-duration="1s"
+						data-wow-delay="0s">
+							<div class="item">
+								<p class="littleText">Czynsz:</p>
+								<p class="largeText">2300,00 zł</p>
+							</div>
+							<div class="item">
+								<p class="littleText">Czynsz administracyjny:</p>
+								<p class="largeText">300,00 zł</p>
+							</div>
+						</div>
+						<div class="item mb">
+							<p class="littleText">Kaucja</p>
+							<p class="largeText">3000,00 zł</p>
+						</div>
+						<div class="item">
+							<p class="littleText">Prąd</p>
+							<p class="largeText">100,00 zł</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			@@include('html/form.html', {})
+		</main>
+		@@include('html/footer.html', {})
+		<script src="js/app.min.js"></script>
+	</body>
+</html>

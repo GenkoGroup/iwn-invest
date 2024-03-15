@@ -314,6 +314,13 @@ a {
 				}
 				.cart {
 					width: 100%;
+					p {
+						display: -webkit-box;
+						-webkit-line-clamp: 3;
+						text-align: left;
+						-webkit-box-orient: vertical;
+						overflow: hidden;
+					}
 					&:hover {
 						.picture {
 							img {
