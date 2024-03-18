@@ -1,11 +1,50 @@
+@import 'mixins';
 #footer {
 	background-color: $green;
-	height: 185px;
 	padding: 25px 0;
 	.container {
-		.logo {
+		padding: 0 33.5px;
+		display: flex;
+		align-items: stretch;
+		justify-content: space-between;
+		.footer-logo {
 			display: flex;
-			width: fit-content;
+			flex-direction: column;
+			justify-content: space-between;
+			.logo {
+				display: flex;
+				width: fit-content;
+			}
+			.smallText {
+				color: rgba(255, 255, 255, 0.5);
+				&:nth-child(2) {
+					margin-top: auto;
+				}
+			}
+		}
+		.footer-info {
+			display: flex;
+			flex-direction: column;
+			gap: 15px;
+			a {
+				display: flex;
+				align-items: center;
+				font-family: $interMedium;
+				width: fit-content;
+				svg {
+					margin-right: 20px;
+				}
+			}
+			p {
+				svg {
+					margin-right: 20px;
+				}
+				display: flex;
+				width: fit-content;
+				align-items: center;
+				font-family: $interMedium;
+				color: $white;
+			}
 		}
 	}
 }

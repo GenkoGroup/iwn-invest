@@ -79,8 +79,18 @@ $timesNewRomanBold: TimesNewRomanBold, sans-serif;
 	color: $white;
 	font-family: $timesNewRomanBold;
 	transition: 0.5s all;
+	svg {
+		path {
+			transition: 0.5s all;
+		}
+	}
 	&:hover {
 		color: $darkGreen;
+		svg {
+			path {
+				fill: $darkGreen;
+			}
+		}
 	}
 }
 
