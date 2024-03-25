@@ -48,3 +48,64 @@
 		}
 	}
 }
+
+@media screen and (max-width: $mobilePortrait) {
+	#footer {
+		.container {
+			.footer-logo {
+				.logo {
+					width: 50px;
+					img {
+						width: 100%;
+					}
+				}
+			}
+			.footer-info {
+				.link,
+				.address {
+					font-size: 10px;
+					line-height: 12px;
+					gap: 10px;
+					svg {
+						width: 15px;
+						min-width: 15px;
+						margin-right: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	#footer {
+		.container {
+			flex-direction: column;
+			gap: 30px;
+			padding: 0;
+			.footer-logo {
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				.smallText,
+				.smallText:nth-child(2) {
+					margin: 0;
+				}
+			}
+			.footer-info {
+				gap: 10px;
+				.link,
+				.address {
+					font-size: 10px;
+					line-height: 12px;
+					gap: 10px;
+					svg {
+						width: 15px;
+						min-width: 15px;
+						margin-right: 0;
+					}
+				}
+			}
+		}
+	}
+}
