@@ -27,3 +27,35 @@
 		}
 	}
 }
+
+@media screen and (max-width: $laptop) {
+	.section-contact-form {
+		.image {
+			max-width: 230px;
+			left: 20px;
+		}
+	}
+}
+
+@media screen and (max-width: $tablet) {
+	.section-contact-form {
+		.image {
+			display: none;
+		}
+	}
+}
+
+@media screen and (max-width: $mobilePortrait) {
+	.section-contact-form {
+		.container {
+			.form {
+				gap: 24px;
+				border-radius: 10px;
+				padding: 23px 15px;
+				.smallText {
+					width: auto;
+				}
+			}
+		}
+	}
+}

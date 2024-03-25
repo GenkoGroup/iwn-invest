@@ -3,6 +3,14 @@
 #catalog-page {
 	#header {
 		.container {
+			.button-burger,
+			.button-close {
+				svg {
+					path {
+						stroke: $black;
+					}
+				}
+			}
 			.logo {
 				filter: invert(1);
 			}
@@ -26,6 +34,28 @@
 				}
 				&:after {
 					top: 265px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $mobilePortrait) {
+	#catalog-page {
+		#main {
+			.section-available-premises {
+				padding: 92px 0 40px;
+				.container {
+					.h2 {
+						margin-bottom: 30px;
+					}
+					&:before,
+					&:after {
+						content: non;
+					}
+					.content {
+						flex-direction: column;
+					}
 				}
 			}
 		}

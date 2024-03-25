@@ -65,19 +65,6 @@ export function scrollAnchor() {
 	}
 }
 
-//Добавление фона для header при скроле страницы
-export function addShadowHeader() {
-	const header = document.querySelector('#header')
-	window.addEventListener('scroll', function () {
-		const scrollPosition = window.pageYOffset
-		if (scrollPosition > 0) {
-			header.classList.add('shadow')
-		} else {
-			header.classList.remove('shadow')
-		}
-	})
-}
-
 //скролл наверх
 
 export function scrollTop() {
@@ -109,13 +96,39 @@ export function initializedSlider() {
 		effect: 'coverflow',
 		grabCursor: true,
 		centeredSlides: true,
-		slidesPerView: 2.2,
 		coverflowEffect: {
 			rotate: 0,
-			stretch: 80,
-			depth: 1500,
-			modifier: 0.4,
 			slideShadows: false,
+		},
+
+		breakpoints: {
+			// when window width is >= 320px
+			320: {
+				slidesPerView: 1.1,
+				coverflowEffect: {
+					stretch: 20,
+					depth: 1000,
+					modifier: 1,
+				},
+			},
+			// when window width is >= 768px
+			768: {
+				slidesPerView: 1.5,
+				coverflowEffect: {
+					stretch: 20,
+					depth: 1000,
+					modifier: 1,
+				},
+			},
+			// when window width is >= 1024px
+			1024: {
+				slidesPerView: 2.2,
+				coverflowEffect: {
+					stretch: 80,
+					depth: 1500,
+					modifier: 0.4,
+				},
+			},
 		},
 	})
 }
@@ -124,16 +137,19 @@ export function initializedSlider() {
 
 export function showMobMenu() {
 	const burgerButton = document.querySelector('.button-burger')
+	const burgerClose = document.querySelector('.button-close')
 	const mobMenu = document.querySelector('.mob-menu')
 	burgerButton?.addEventListener('click', e => {
-		e.currentTarget.classList.toggle('active')
 		mobMenu?.classList.toggle('active')
+	})
+	burgerClose?.addEventListener('click', e => {
+		mobMenu?.classList.remove('active')
 	})
 }
 
-//dynamic anchorHeader
+//dynamic anchorHeaderDesktop
 
-export function dynamicAnchorHeader() {
+export function dynamicAnchorHeaderDesktop() {
 	let currentPage = window.location.pathname
 	const anchors = [
 		'#section-about-us',
@@ -141,6 +157,25 @@ export function dynamicAnchorHeader() {
 		'#section-available-premises',
 	]
 	const links = document.querySelectorAll('.navigation .menu li .link-anchor')
+	links?.forEach((link, ind) => {
+		if (currentPage !== '/ivn-invest-test/') {
+			let anchorLink =
+				'https://genkogroup.github.io/ivn-invest-test/' + anchors[ind]
+			link.setAttribute('href', anchorLink)
+		}
+	})
+}
+
+//dynamic anchorHeaderMob
+
+export function dynamicAnchorHeaderMob() {
+	let currentPage = window.location.pathname
+	const anchors = [
+		'#section-about-us',
+		'#section-services',
+		'#section-available-premises',
+	]
+	const links = document.querySelectorAll('.nav-menu li .link-anchor')
 	links?.forEach((link, ind) => {
 		if (currentPage !== '/ivn-invest-test/') {
 			let anchorLink =

@@ -16,6 +16,7 @@
 					.swiper-slide {
 						img {
 							width: 100%;
+							border-radius: 10px;
 						}
 					}
 				}
@@ -136,6 +137,134 @@
 					max-width: 380px;
 					right: 90px;
 					top: 42px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $laptop) {
+	#main-page {
+		#main {
+			.section-about-us {
+				.image {
+					width: 350px;
+				}
+			}
+			.section-services {
+				.container {
+					.content {
+						gap: 40px;
+						.item {
+							width: calc(50% - 20px);
+							&:first-child {
+								max-width: initial;
+								width: calc(50% - 20px);
+							}
+							.button-mob {
+								display: none;
+							}
+							.row-item {
+								gap: 16px;
+								.check {
+									height: 40px;
+									width: 40px;
+									min-width: 40px;
+									border-radius: 50%;
+									svg {
+										width: 16px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			.section-available-premises {
+				.container {
+					.h2 {
+						margin-bottom: 50px;
+					}
+					.image {
+						max-width: 300px;
+						right: 60px;
+						top: 80px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $tablet) {
+	#main-page {
+		#main {
+			.section-about-us {
+				.image {
+					top: 30px;
+					width: 280px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $mobilePortrait) {
+	#main-page {
+		#main {
+			.section-slider {
+				height: auto;
+				padding-top: 82px;
+				padding-bottom: 21px;
+				.container {
+					.button {
+						margin-top: 15px;
+					}
+					.h1 {
+						bottom: 66px;
+					}
+				}
+			}
+			.section-about-us {
+				.image {
+					left: -50px;
+					width: 250px;
+				}
+			}
+			.section-services {
+				.container {
+					.content {
+						flex-direction: column;
+						.item {
+							width: 100%;
+							&:first-child {
+								width: 100%;
+							}
+							.button-desktop {
+								display: none;
+							}
+							.button-mob {
+								display: block;
+								margin-left: auto;
+								margin-right: auto;
+							}
+							h2 {
+								text-align: center;
+							}
+						}
+					}
+				}
+			}
+			.section-available-premises {
+				.container {
+					.h2 {
+						margin-bottom: 170px;
+					}
+					.image {
+						width: 250px;
+						top: 50px;
+						right: 70px;
+					}
 				}
 			}
 		}

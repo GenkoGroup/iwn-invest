@@ -8,10 +8,10 @@ window.addEventListener('load', e => {
 	flsFunctions.isWebP()
 
 	flsFunctions.scrollAnchor()
-	// flsFunctions.addShadowHeader()
 	flsFunctions.scrollTop()
 	flsFunctions.initializedSlider()
-	flsFunctions.dynamicAnchorHeader()
-	// flsFunctions.showMobMenu()
+	flsFunctions.dynamicAnchorHeaderDesktop()
+	flsFunctions.dynamicAnchorHeaderMob()
+	flsFunctions.showMobMenu()
 	flsFunctions.wowAnimationInit()
 })

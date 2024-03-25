@@ -17,5 +17,33 @@
 				gap: 0 50px;
 			}
 		}
+		.button-burger {
+			display: none;
+			align-items: center;
+			justify-content: center;
+			width: 24px;
+			height: 24px;
+		}
+	}
+}
+
+@media screen and (max-width: $mobilePortrait) {
+	#header {
+		top: 16px;
+		.container {
+			align-items: center;
+			.logo {
+				width: 49px;
+				img {
+					width: 100%;
+				}
+			}
+			.navigation {
+				display: none;
+			}
+			.button-burger {
+				display: flex;
+			}
+		}
 	}
 }

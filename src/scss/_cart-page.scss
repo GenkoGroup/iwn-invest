@@ -3,6 +3,14 @@
 #cart-page {
 	#header {
 		.container {
+			.button-burger,
+			.button-close {
+				svg {
+					path {
+						stroke: $black;
+					}
+				}
+			}
 			.logo {
 				filter: invert(1);
 			}
@@ -69,6 +77,44 @@
 						align-items: stretch;
 						gap: 78px;
 						margin-bottom: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $mobilePortrait) {
+	#cart-page {
+		#main {
+			.section-information-cart {
+				padding: 92px 0 60px;
+				.container {
+					position: relative;
+					.image {
+						max-width: 290px;
+						bottom: -50px;
+						right: -90px;
+					}
+					.h2 {
+						margin-bottom: 30px;
+					}
+					.gallery {
+						margin-bottom: 30px;
+						gap: 13px 6px;
+						.gallery-picture {
+							width: calc(33.3% - 4px);
+						}
+					}
+					.description {
+						h4 {
+							margin-bottom: 15px;
+						}
+						.wrapper-item {
+							gap: 20px;
+							margin-bottom: 20px;
+							flex-direction: column;
+						}
 					}
 				}
 			}
